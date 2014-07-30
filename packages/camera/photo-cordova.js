@@ -11,7 +11,7 @@ Template.camera.shouldShowVideo = function () {
 };
 
 Template.camera.events({
-  'click #startbutton': function () {
+  'click .button': function () {
     navigator.camera.getPicture(onSuccess, onFail, {
       quality: 30,
       targetWidth: 160,

@@ -49,9 +49,9 @@ Template.camera.shouldShowVideo = function () {
 };
 
 Template.camera.events({
-  'click #startbutton': function () {
+  'click #take-photo': function () {
 
-var streaming = false,
+  var streaming = false,
     video        = document.querySelector('#video'),
     canvas       = document.querySelector('#canvas'),
     photo        = document.querySelector('#photo'),

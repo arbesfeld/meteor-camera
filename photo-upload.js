@@ -10,7 +10,7 @@ if (Meteor.isClient) {
   };
 
   Template.all_photos.events({
-    'click input': function () {
+    'click .button': function () {
       Meteor.call("removeAll");
     }
   });
