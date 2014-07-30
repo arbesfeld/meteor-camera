@@ -1,0 +1,16 @@
+<head>
+  <title>photo-upload</title>
+</head>
+
+<body>
+  <h1> This is a! </h1>
+  {{> camera}}
+  {{> all_photos}}
+</body>
+
+<template name="all_photos">
+  <input class="button" type="button" value="Clear" />
+  {{#each photos}}
+    <img height="120" width="180" class="photo" src="{{src}}"/>
+  {{/each}}
+</template>
